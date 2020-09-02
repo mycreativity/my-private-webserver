@@ -1,0 +1,30 @@
+{
+  "name": "my-personal-webserver",
+  "version": "1.0.0",
+  "description": "For my own development, try-outs, fiddling. A customised and personalised easy to use webserver.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mycreativity/my-private-webserver.git"
+  },
+  "keywords": [
+    "webserver",
+    "development",
+    "private",
+    "customised",
+    "easy",
+    "light-weight",
+    "simple",
+    "to",
+    "use"
+  ],
+  "author": "Jasper Steenweg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mycreativity/my-private-webserver/issues"
+  },
+  "homepage": "https://github.com/mycreativity/my-private-webserver#readme"
+}
