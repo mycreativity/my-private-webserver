@@ -1,4 +1,4 @@
-[![Build Status](https://dev.azure.com/steenweg/mycreativity/_apis/build/status/mycreativity.static-server?branchName=master)](https://dev.azure.com/steenweg/mycreativity/_build/latest?definitionId=5&branchName=master)
+[![Build Status](https://dev.azure.com/steenweg/mycreativity/_apis/build/status/mycreativity.static-server?branchName=main)](https://dev.azure.com/steenweg/mycreativity/_build/latest?definitionId=5&branchName=main)
 # Static Server
 Static Server is a simple web server that serves static files only. It is meant to help during local development of static HTML web pages.<br/>
 
