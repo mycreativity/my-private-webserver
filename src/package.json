@@ -4,7 +4,8 @@
   "description": "For my own development, try-outs, fiddling. A customised and personalised easy to use webserver.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo \"Build success!\" && exit 0"
   },
   "repository": {
     "type": "git",
