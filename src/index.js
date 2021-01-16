@@ -5,6 +5,7 @@ const path = require('path');
 const hostname = '127.0.0.1';
 const port = 3000;
 const projectFolder = "/Users/jaspersteenweg/Projects";
+const defaultWebPages = ["index.html", "index.htm"];
 
 const server = http.createServer((req, res) => {
   console.log(req.url);
@@ -31,17 +32,13 @@ const server = http.createServer((req, res) => {
     return;
   }
 
+  // Type of file?
+  var extension = path.extname(filePathOs);
+  var contentType = getContentTypeByExtension(extension);
+
   // File exists, let's read it
-  fs.readFile(filePathOs, 'utf8', function(err, contents) {
-
-    var extension = path.extname(filePathOs);
-    var contentType = getContentTypeByExtension(extension);
-
-    res.statusCode = 200;
-    res.setHeader('Content-Type', contentType);
-    res.end(contents);
-    return;
-  });
+  res.writeHead(200,{'content-type':contentType});
+  fs.createReadStream(filePathOs).pipe(res);
 });
 
 server.listen(port, hostname, () => {
